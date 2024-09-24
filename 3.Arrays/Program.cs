@@ -100,6 +100,49 @@ namespace _3.Arrays
 
     public class MultiDimensional_Array
     {
+        //public static void Main(string[] args)
+        //{
+        //    //int[,] arr = new int[3, 3];
+        //    //arr[0, 1] = 10;
+        //    //arr[1, 2] = 20;
+        //    //arr[2, 0] = 30;
 
+        //    //int[,] arr = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        //    //int[,] arr = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        //    int[,] arr = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+
+        //    for (int i = 0; i < 3; i++)
+        //    {
+        //        for (int j = 0; j < 3; j++)
+        //        {
+        //            Console.Write(arr[i, j] + " ");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //    Console.ReadKey();
+        //}
+    }
+
+    public class Jagged_Array
+    {
+        public static void Main(string[] args)
+        {
+            int[][] arr = new int[2][];
+            //arr[0] = new int[4] { 11, 21, 56, 78 };
+            //arr[1] = new int[6] { 42, 61, 37, 41, 59, 63 };
+
+            arr[0] = new int[] { 11, 21, 56, 78 };
+            arr[1] = new int[] { 42, 61, 37, 41, 59, 63 };
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j < arr[i].Length; j++)
+                {
+                    Console.Write(arr[i][j] + "");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+        }
     }
 }
