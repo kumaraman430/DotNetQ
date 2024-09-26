@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace _3.Arrays
 {
-    public class SingleDimensional_Array
+    class SingleDimensional_Array
     {
-        //public static void Main(string[] args)
+        //static void Main(string[] args)
         //{
         //    //int[] arr = new int[5];
         //    //arr[0] = 10;
@@ -36,9 +36,9 @@ namespace _3.Arrays
         //}
     }
 
-    public class Passing_array_to_function
+    class Passing_array_to_function
     {
-        //static void printArray(int[] arr)
+        //void printArray(int[] arr)
         //{
         //    Console.WriteLine("Printing array elements");
         //    foreach (int i in arr)
@@ -58,7 +58,7 @@ namespace _3.Arrays
         //}
     }
 
-    public class Passing_array_to_function_Min_Num
+    class Passing_array_to_function_Min_Num
     {
         //static void PrintMin(int[] arr)
         //{
@@ -84,7 +84,7 @@ namespace _3.Arrays
         //    }
         //    Console.WriteLine("Maximum Element is : " + max);
         //}
-        //public static void Main(string[] args)
+        //static void Main(string[] args)
         //{
         //    int[] arr1 = { 25, 10, 20, 15, 40, 50 };
         //    int[] arr2 = { 12, 23, 44, 11, 54 };
@@ -98,9 +98,9 @@ namespace _3.Arrays
         //}
     }
 
-    public class MultiDimensional_Array
+    class MultiDimensional_Rectangular_Array
     {
-        //public static void Main(string[] args)
+        //static void Main(string[] args)
         //{
         //    //int[,] arr = new int[3, 3];
         //    //arr[0, 1] = 10;
@@ -123,26 +123,114 @@ namespace _3.Arrays
         //}
     }
 
-    public class Jagged_Array
+    class Jagged_Array
     {
-        public static void Main(string[] args)
+        //    static void Main(string[] args)
+        //    {
+        //    //int[][] jaggedArray = new int[2][];
+
+        //    //jaggedArray[0] = new int[4] { 11, 21, 56, 78 };
+        //    //jaggedArray[1] = new int[6] { 42, 61, 37, 41, 59, 63 };
+
+        //    //jaggedArray[0] = new int[] { 11, 21, 56, 78 };
+        //    //jaggedArray[1] = new int[] { 42, 61, 37, 41, 59, 63 };
+
+        //        int[][] jaggedArray = new int[3][]
+        //        {
+        //            new int[] {11,21,56,68},
+        //            new int[] {2,5,98},
+        //            new int[] {11,21,78}
+        //        };
+
+        //        int value = jaggedArray[1][0]; // Accesses the first element of the second inner array (which is 2)
+        //        int outerLength = jaggedArray.Length; // Number of inner arrays
+        //        int innerLength = jaggedArray[0].Length; // Length of the first inner array
+
+        //        for (int i = 0; i < jaggedArray.Length; i++)
+        //        {
+        //            for (int j = 0; j < jaggedArray[i].Length; j++)
+        //            {
+        //                Console.Write(jaggedArray[i][j] + " ");
+        //            }
+        //            Console.WriteLine();
+        //        }
+        //        Console.ReadKey();
+        //    }
+    }
+
+    class Params_Array
+    {
+        //public void Show1(params int[] val)
+        //{
+        //    for (int i = 0; i < val.Length; i++)
+        //    {
+        //        Console.WriteLine(val[i]);
+        //    }
+        //}
+        //public void Show2(params object[] items)
+        //{
+        //    for(int i = 0;i < items.Length; i++)
+        //    {
+        //        Console.WriteLine(items[i]);
+        //    }
+        //}
+        //static void Main(string[] args)
+        //{
+        //    Params_Array params_Array = new Params_Array();
+        //    params_Array.Show1(2, 4, 6, 8, 10, 12, 14);
+        //    params_Array.Show2(2, "Aman", 6, "Kumar", 10, 12, 14);
+
+        //    Console.ReadKey();
+        //}
+    }
+
+    class Array_Class
+    {
+        static void Main(string[] args)
         {
-            int[][] arr = new int[2][];
-            //arr[0] = new int[4] { 11, 21, 56, 78 };
-            //arr[1] = new int[6] { 42, 61, 37, 41, 59, 63 };
+            // Creating One-Dimensional array
+            int[] numbers = new int[] { 10, 21, 333, 46, 455, 68 };
 
-            arr[0] = new int[] { 11, 21, 56, 78 };
-            arr[1] = new int[] { 42, 61, 37, 41, 59, 63 };
+            // Creating a Multi-Dimensional array
+            int[,] matrix = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                for (int j = 0; j < arr[i].Length; j++)
-                {
-                    Console.Write(arr[i][j] + "");
-                }
-                Console.WriteLine();
-            }
+            // Display original array
+            Console.WriteLine("Original Array:");
+            PrintArray(numbers);
+
+            // Sorting the array
+            Array.Sort(numbers);
+            Console.WriteLine("\nSorted Array:");
+            PrintArray(numbers);
+
+            // Reverse the array
+            Array.Reverse(numbers);
+            Console.WriteLine("\nReverse Array:");
+            PrintArray(numbers);
+
+            // Displaying multi-dimensional array
+            Console.WriteLine("\nMulti-Dimensional Array:");
+            PrintMultiDimensionalArray(matrix);
+
             Console.ReadKey();
+        }
+
+        static void PrintArray(int[] numbers)
+        {
+            foreach (int i in numbers)
+            {
+                Console.Write(i + " ");
+            }
+        }
+        static void PrintMultiDimensionalArray(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write(matrix[i, j] + " ");
+                }
+            }
         }
     }
 }
