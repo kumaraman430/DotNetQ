@@ -186,51 +186,79 @@ namespace _3.Arrays
 
     class Array_Class
     {
-        static void Main(string[] args)
-        {
-            // Creating One-Dimensional array
-            int[] numbers = new int[] { 10, 21, 333, 46, 455, 68 };
+        //static void Main(string[] args)
+        //{
+        //    // Creating One-Dimensional array
+        //    int[] arr1 = new int[] { 10, 21, 333, 46, 455, 68 };
 
-            // Creating a Multi-Dimensional array
-            int[,] matrix = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+        //    // Creating an empty array
+        //    int[] arr2 = new int[6];
 
-            // Display original array
-            Console.WriteLine("Original Array:");
-            PrintArray(numbers);
+        //    // Creating a Multi-Dimensional array
+        //    int[,] matrix = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
 
-            // Sorting the array
-            Array.Sort(numbers);
-            Console.WriteLine("\nSorted Array:");
-            PrintArray(numbers);
+        //    // Display original array
+        //    Console.WriteLine("Original first array:");
+        //    PrintArray(arr1);
 
-            // Reverse the array
-            Array.Reverse(numbers);
-            Console.WriteLine("\nReverse Array:");
-            PrintArray(numbers);
+        //    // Display Length of Array
+        //    Console.WriteLine("\nLength of first array: " + arr1.Length);
 
-            // Displaying multi-dimensional array
-            Console.WriteLine("\nMulti-Dimensional Array:");
-            PrintMultiDimensionalArray(matrix);
+        //    // Finding Index of array
+        //    Console.WriteLine("\nIndex position of 21 is : " + Array.IndexOf(arr1,21));
 
-            Console.ReadKey();
-        }
+        //    // Sorting the array
+        //    Array.Sort(arr1);
+        //    Console.WriteLine("\nSorted array:");
+        //    PrintArray(arr1);
 
-        static void PrintArray(int[] numbers)
-        {
-            foreach (int i in numbers)
-            {
-                Console.Write(i + " ");
-            }
-        }
-        static void PrintMultiDimensionalArray(int[,] matrix)
-        {
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    Console.Write(matrix[i, j] + " ");
-                }
-            }
-        }
+        //    // Reverse the array
+        //    Array.Reverse(arr1);
+        //    Console.WriteLine("\nReverse array:");
+        //    PrintArray(arr1);
+
+        //    // Coping first array to empty array
+        //    Array.Copy(arr1, arr2, arr1.Length);
+        //    Console.WriteLine("\nSecond array:");
+        //    PrintArray(arr2);
+
+        //    // Displaying multi-dimensional array
+        //    Console.WriteLine("\nMulti-Dimensional array:");
+        //    PrintMultiDimensionalArray(matrix);
+
+        //    Console.ReadKey();
+        //}
+        //static void PrintArray(int[] numbers)
+        //{
+        //    foreach (int i in numbers)
+        //    {
+        //        Console.Write(i + " ");
+        //    }
+        //}
+        //static void PrintMultiDimensionalArray(int[,] matrix)
+        //{
+        //    for (int i = 0; i < matrix.GetLength(0); i++)
+        //    {
+        //        for (int j = 0; j < matrix.GetLength(1); j++)
+        //        {
+        //            Console.Write(matrix[i, j] + " ");
+        //        }
+        //    }
+        //}
+    }
+
+    class Command_Line_Argument
+    {
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Argument length:" + args.Length);
+        //    Console.WriteLine("Supplied Arguments are: ");
+
+        //    foreach (Object obj in args)
+        //    {
+        //        Console.WriteLine(obj);
+        //    }
+        //    Console.ReadKey();
+        //}
     }
 }
