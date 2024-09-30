@@ -63,35 +63,34 @@ namespace _5.Properties
 
     class ReadOnly_Properties_Example
     {
-        class Employee
-        {
-            private static int counter;
-            public Employee()
-            {
-                counter++;
-            }
+        //class Employee
+        //{
+        //    private static int counter;
+        //    public Employee()
+        //    {
+        //        counter++;
+        //    }
 
-            public static int Counter
-            {
-                get
-                {
-                    return counter;
-                }
-            }
-        }
-        class EmployeeTest
-        {
-            static void Main(string[] args)
-            {
-                Employee e1 = new Employee();
-                Employee e2 = new Employee();
-                Employee e3 = new Employee();
+        //    public static int Counter
+        //    {
+        //        get
+        //        {
+        //            return counter;
+        //        }
+        //    }
+        //}
+        //class EmployeeTest
+        //{
+        //    static void Main(string[] args)
+        //    {
+        //        Employee e1 = new Employee();
+        //        Employee e2 = new Employee();
+        //        Employee e3 = new Employee();
 
-                //e1.Counter = 10; //Compile Time Error : Can't set value
+        //        //e1.Counter = 10; //Compile Time Error : Can't set value
 
-                Console.WriteLine("No. of Employees : " + Employee.Counter);
-            }
-        }
+        //        Console.WriteLine("No. of Employees : " + Employee.Counter);
+        //    }
+        //}
     }
-
 }
