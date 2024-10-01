@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inheritance
+namespace _6.Inheritance
 {
     class Single_Level_Inheritance
     {
@@ -84,6 +84,46 @@ namespace Inheritance
         //        bd.eat();
         //        bd.bark();
         //        bd.weep();
+        //    }
+        //}
+    }
+
+    class Aggregation
+    {
+        //class Address
+        //{
+        //    public string addressline, city, state;
+        //    public Address(string AddressLine, string City, string State)
+        //    {
+        //        this.addressline = AddressLine;
+        //        this.city = City;
+        //        this.state = State;
+        //    }
+        //}
+        //class Employee
+        //{
+        //    int id;
+        //    string name;
+        //    Address address;
+        //    public Employee(int id, string name, Address address)
+        //    {
+        //        this.id = id;
+        //        this.name = name;
+        //        this.address = address;
+        //    }
+        //    public void Display()
+        //    {
+        //        Console.WriteLine(id + " " + name + " " + address.addressline + " " + address.city + " " + address.state);
+        //    }
+        //}
+        //class AggregationTest
+        //{
+        //    static void Main(string[] args)
+        //    {
+        //        Address address = new Address("G-13, Sec-3", "Noida", "UP");
+        //        Employee employee = new Employee(1, "Aman", address);
+
+        //        employee.Display();
         //    }
         //}
     }
